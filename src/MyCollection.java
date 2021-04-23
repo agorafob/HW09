@@ -75,7 +75,7 @@ public class MyCollection implements CustomCollection {
         return true;
     }
 
-    public void newIndex() {
+    private void newIndex() {
         Link x = this.first;
         for (int i = 0; i < this.last.getIndex(); i++) {
             x.setIndex(i);
