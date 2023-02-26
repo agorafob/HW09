@@ -5,11 +5,13 @@ public class MyCollection implements CustomCollection {
     private int size = 0;
     private Link first;
     private Link last;
-
+/**
+This is JavaDoc
+ */
     @Override
     public boolean add(String str) {
         addLast(str);
-        return false;
+        return true;
     }
 
     private void addLast(String str) {
@@ -28,6 +30,11 @@ public class MyCollection implements CustomCollection {
         size++;
     }
 
+    /**
+     * @param strArr "Array of strings"
+     * @return boolean
+     * @// TODO: 26.02.2023 read more
+     */
     @Override
     public boolean addAll(String[] strArr) {
         if (strArr.length == 0) {
